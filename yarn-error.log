@@ -1,0 +1,43 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.12.1/libexec/bin/yarn.js add @aws-sdk/util-dynamodb aws-sdk dot.env
+
+PATH: 
+  /usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/apache-maven-3.6.1/bin
+
+Yarn version: 
+  1.12.1
+
+Node version: 
+  20.3.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/dot.env: Not found
+      at params.callback [as _callback] (/usr/local/Cellar/yarn/1.12.1/libexec/lib/cli.js:63139:18)
+      at self.callback (/usr/local/Cellar/yarn/1.12.1/libexec/lib/cli.js:124547:22)
+      at Request.emit (node:events:511:28)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.12.1/libexec/lib/cli.js:125519:10)
+      at Request.emit (node:events:511:28)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.12.1/libexec/lib/cli.js:125441:12)
+      at Object.onceWrapper (node:events:625:28)
+      at IncomingMessage.emit (node:events:523:35)
+      at endReadableNT (node:internal/streams/readable:1367:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "Location-Tracking-System-Vendor-Data",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com-GW0602Teaching:GW0602Teaching/Location-Tracking-System-Vendor-Data.git",
+    "author": "xuyang0602 <wang.xuyang0602@gmail.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
