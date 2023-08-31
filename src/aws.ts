@@ -20,3 +20,17 @@ export const dynamodbCreateTable = async (
     throw new Error('dynamodbCreateTable error');
   }
 };
+
+// 2 - Describe a table
+export const dynamodbDescribeTable = async (tableName: string) => {
+  try {
+    const res = await dynamodb
+      .describeTable({ TableName: tableName })
+      .promise();
+    console.log('Table retrieved', res);
+    return res;
+  } catch (error) {
+    console.error(error);
+    throw new Error('dynamodbDescribeTable error');
+  }
+};
