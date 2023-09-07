@@ -63,6 +63,9 @@ export const dynamodbCreateRecord = async (
     console.log('Record created', res);
     return res;
   } catch (error) {
+    if (error instanceof Error) {
+      return error;
+    }
     console.error(error);
     throw new Error('dynamodbCreateRecord error');
   }

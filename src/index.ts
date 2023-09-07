@@ -33,6 +33,14 @@ const init = async () => {
   // 4 - Insert a record
   // const DUMMY_DATA = vendors[0];
   // dynamodbCreateRecord(TABLE_NAME_CONST, DUMMY_DATA);
+
+  // 5 - Seed all data
+  for (const vendorData of vendors) {
+    const res = dynamodbCreateRecord(TABLE_NAME_CONST, vendorData);
+    if (res instanceof Error) {
+      console.log('Error', vendorData, res);
+    }
+  }
 };
 
 init();
